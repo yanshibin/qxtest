@@ -5,7 +5,15 @@ let obj = JSON.parse($response.body);
 
 if ($request.url.indexOf(path1) != -1){
       obj.objects[0]["due_date"] = "2029-06-14";
+      obj.objects[1]["due_date"] = "2029-06-14";
+      obj.objects[2]["due_date"] = "2029-06-14";
+      obj.objects[3]["due_date"] = "2029-06-14";
+      obj.objects[4]["due_date"] = "2029-06-14";
       obj.objects[0]["status"] = "IN_TRIAL";
+      obj.objects[1]["status"] = "IN_TRIAL";
+      obj.objects[2]["status"] = "IN_TRIAL";
+      obj.objects[3]["status"] = "IN_TRIAL";
+      obj.objects[4]["status"] = "IN_TRIAL";
 }
 
 if ($request.url.indexOf(ad) != -1) {
