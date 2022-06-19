@@ -6,7 +6,8 @@ let obj = JSON.parse($response.body);
 if ($request.url.indexOf(path1) != -1){
       obj.objects.forEach(function(item,index){
       item.due_date="2023-06-15"
-})
+});
+}
 
 if ($request.url.indexOf(vip) != -1) {
       obj["status"] = "WITHIN_PERIOD";
