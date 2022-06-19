@@ -1,5 +1,5 @@
 const path1 = "/abc/applets/user_applets";
-const ad = 'ssp-svr/ssp/list3';
+const vip = '/wordsapp/vip/user_item/status';
 const adold = 'getGlobalData';
 let obj = JSON.parse($response.body);
 
@@ -16,8 +16,8 @@ if ($request.url.indexOf(path1) != -1){
       obj.objects[4]["status"] = "IN_USE";
 }
 
-if ($request.url.indexOf(ad) != -1) {
-delete obj.data.pmap
+if ($request.url.indexOf(vip) != -1) {
+      obj["status"] = "WITHIN_PERIOD";
 }
 
 if ($request.url.indexOf(adold) != -1) {
