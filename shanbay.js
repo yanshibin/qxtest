@@ -4,8 +4,8 @@ const adold = 'getGlobalData';
 let obj = JSON.parse($response.body);
 
 if ($request.url.indexOf(path1) != -1){
-      obj.objects["due_date"] = "2029-06-14";
-      obj.objects["status"] = "IN_TRIAL";
+      obj.objects[0]["due_date"] = "2029-06-14";
+      obj.objects[0]["status"] = "IN_TRIAL";
 }
 
 if ($request.url.indexOf(ad) != -1) {
